@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      defer：浏览器指示脚本在文档被解析后执行，script被异步加载后并不会立刻执行，而是等待文档被解析完毕后执行。
+    </p>
+    <p>
+      async：同样是异步加载脚本，区别是脚本加载完毕后立即执行，这导致async属性下的脚本是乱序的，对于script有先后依赖关系的情况，并不适用。
+    </p>
+    <img src="./c84fdc0e47268832fa8914ab4d125002.png" alt="" />
+    <p>
+      蓝色线代表网络读取，红色线代表执行时间，这俩都是针对脚本的；绿色线代表
+      HTML 解析
+    </p>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+/* <div><span>我是多行文字。我是多行文字。我是多行文字。我是多行文字。我是多行文字。我是多行文字。我是多行文字。我是多行文字。我是多行文字。我是多行文字。</span></div>
+<div><span>我是一行文字</span></div>
+*/
+div {
+  text-align: center;
+}
+div span {
+  display: inline-block;
+  text-align: left;
+}

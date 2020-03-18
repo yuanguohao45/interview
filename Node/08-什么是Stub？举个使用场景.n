@@ -1,0 +1,12 @@
+Stub是用于模拟一个组件或模块的函数或程序。在测试用例中， 简单的说，你可以用Stub去模拟一个方法，从而避免调用真实的方法， 使用Stub你还可以返回虚构的结果。你可以配合断言使用Stub。
+
+var fs = require('fs');
+
+var readFileStub = sinon.stub(fs, 'readFile', function (path, cb) {  
+    return cb(null, 'filecontent');
+});
+
+expect(readFileStub).to.be.called;  
+readFileStub.restore(); 
+
+在单元测试中：Stub是完全模拟一个外部依赖，而Mock常用来判断测试通过还是失败。

@@ -1,0 +1,25 @@
+/* 红色区域的大小是多少？200 - 20*2 - 20*2 = 120 */
+.box {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin: 20px;
+  background: red;
+  border: 20px solid black;
+  box-sizing: border-box;
+}
+/* 标准模型 */
+.box {
+  box-sizing: content-box;
+}
+/*IE模型*/
+.box {
+  box-sizing: border-box;
+}
+
+/* html文档中的每个元素都被描绘成矩形盒子，这些矩形盒子通过一个模型来描述其占用空间，这个模型称为盒模型。
+
+盒模型通过四个边界来描述：margin（外边距），border（边框），padding（内边距），content（内容区域） */
+
+/* IE盒模型
+概念： ie 盒子模型的范围包括 margin、border、padding、content，和标准 w3c 盒子模型不同的是：ie 盒子模型的 content 部分包含了 border 和 pading。 */

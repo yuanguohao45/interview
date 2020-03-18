@@ -1,0 +1,18 @@
+<template>
+  <div>
+    vue响应系统
+    响应式系统简述:
+
+    任何一个 Vue Component 都有一个与之对应的 Watcher 实例
+    Vue 的 data 上的属性会被添加 getter 和 setter 属性
+    当 Vue Component render 函数被执行的时候, data 上会被 触碰(touch), 即被读, getter 方法会被调用, 此时 Vue 会去记录此 Vue component 所依赖的所有 data。(这一过程被称为依赖收集)
+    data 被改动时（主要是用户操作）, 即被写, setter 方法会被调用, 此时 Vue 会去通知所有依赖于此 data 的组件去调用他们的 render 函数进行更新
+  </div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style>
+</style>

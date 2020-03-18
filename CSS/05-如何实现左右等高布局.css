@@ -1,0 +1,23 @@
+/* table布局兼容性最好，当然flex布局的align-items: stretch;也行 */
+
+/* <div class="layout">
+  <div class="layout left">left</div>
+  <div class="layout right">center</div>
+</div> */
+
+.layout {
+  display: table;
+  width: 100%;
+}
+.layout div {
+  display: table-cell;
+}
+.layout .left {
+  width: 50%;
+  height: 200px;
+  background: red;
+}
+.layout .right {
+  width: 50%;
+  background: yellow;
+}

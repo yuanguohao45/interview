@@ -1,0 +1,16 @@
+目前项目中，使用的HTTP框架种类太多，加上自己基本功不扎实，现总结一下各个框架。
+
+HttpURLConnection
+apache HttpClient
+OKhttp
+jersey client
+netty
+
+node.js 框架：
+
+express
+koa
+sails
+loopback
+thinkjs
+egg

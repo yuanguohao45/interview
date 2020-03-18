@@ -1,0 +1,4 @@
+模块化：将回调函数分割为独立的函数
+使用Promises
+使用yield
+来计算生成器或Promise
